@@ -8,3 +8,7 @@
 @import "components/buttons";
 @import "components/cards";
 @import "components/forms";
+
+body {
+    background-color: $body-bg; 
+}
