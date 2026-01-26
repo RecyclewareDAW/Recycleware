@@ -1,0 +1,38 @@
+// Colores base
+$primary: rgb(8, 53, 80);      // Azul marino profundo
+$secondary: rgb(60, 162, 146);    // Verde azulado
+$success: rgb(78, 190, 149);      // Verde Menta
+
+// Colores del sistema
+$info:          rgb(33, 158, 188); // Azul cielo (Para información)
+$warning:       rgb(255, 183, 3); // Ámbar
+$danger:        rgb(231, 111, 81); // Terracota
+$light:         rgb(250, 246, 246); // Fondo principal #F7F9FB
+$dark:          rgb(18, 27, 38); // Texto muy oscuro (casi negro) #1D2D35
+
+// Fondo personalizado
+$body-bg: $light;
+$fondo-secundario: rgb(236, 248, 248);
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../assets/fonts/Roboto-VariableFont_wdth\,wght.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alexandria';
+    src: url('../../assets/fonts/Alexandria-VariableFont_wght.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+// Tipos de fuentes
+$font-roboto: 'Roboto';
+$font-alexandria: 'Alexandria';
+
+$font-family-base: $font-roboto;
+
+$headings-font-family: $font-alexandria;
+$headings-font-weight: 700;
