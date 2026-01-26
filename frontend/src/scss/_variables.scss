@@ -1,18 +1,18 @@
 // Colores base
-$primary: #083550;      // Azul marino profundo
-$secondary: #3CA292;    // Verde azulado
-$success: #4EBE95;      // Verde Menta
+$primary: rgb(8, 53, 80);      // Azul marino profundo
+$secondary: rgb(60, 162, 146);    // Verde azulado
+$success: rgb(78, 190, 149);      // Verde Menta
 
 // Colores del sistema
-$info:          #219EBC; // Azul cielo (Para información)
-$warning:       #FFB703; // Ámbar
-$danger:        #E76F51; // Terracota
-$light:         #faf6f6; // Fondo principal #F7F9FB
-$dark:          #121c20; // Texto muy oscuro (casi negro) #1D2D35
+$info:          rgb(33, 158, 188); // Azul cielo (Para información)
+$warning:       rgb(255, 183, 3); // Ámbar
+$danger:        rgb(231, 111, 81); // Terracota
+$light:         rgb(250, 246, 246); // Fondo principal #F7F9FB
+$dark:          rgb(18, 27, 38); // Texto muy oscuro (casi negro) #1D2D35
 
 // Fondo personalizado
 $body-bg: $light;
-$fondo-secundario: #ECF8F8;
+$fondo-secundario: rgb(236, 248, 248);
 
 @font-face {
     font-family: 'Roboto';
