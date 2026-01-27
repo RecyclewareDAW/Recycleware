@@ -5,44 +5,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RecycleWare</title>
+    <link rel="stylesheet" href="./frontend/dist/css/style.css">
 </head>
 
 <body>
     <header>
-    <nav class="navbar">
-
-        <!-- Logo -->
-        <div class="nav-logo">
-            <a href="#">
-                <!-- Placeholder logo -->
-                <img src="https://placehold.co/120x40?text=RecycleWare" alt="RecycleWare logo">
-            </a>
-        </div>
-
-        <!-- Menú principal -->
-        <ul class="nav-menu">
-            <li><a href="#catalogo">Catálogo</a></li>
-            <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
-            <li><a href="#faqs">FAQs</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-
-        <!-- Buscador -->
-        <div class="nav-search">
-            <form action="#" method="get">
-                <input type="search" name="q" placeholder="Busca componentes o equipos..." aria-label="Buscar">
-                <button type="submit" aria-label="Buscar">
-                    🔍
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="/frontend/assets/img/logo-entero.png"
+                        alt="RecycleWare logo" class="img-fluid w-50"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-            </form>
-        </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
 
-        <!-- Login -->
-        <div class="nav-auth">
-            <a href="#login" class="btn-login">Log In</a>
-        </div>
+        <!-- realizado -->
 
-    </nav>
     </header>
     <main>
         <section class="seccion-hero">
@@ -141,7 +153,12 @@
                 </article>
 
                 <article>
-                    <div>★★★★★ <!-- insertar estrellas de bootstrap icons--> </div>
+                    <div><i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <!-- insertar estrellas de bootstrap icons-->
+                    </div>
                     <p><em>"Gracias a RecycleWare pude conseguir un portátil para terminar mi curso de programación. El
                             equipo funciona de maravilla."</em></p>
                     <strong>- Juan R. (Beneficiario)</strong>
