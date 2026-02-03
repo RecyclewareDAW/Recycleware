@@ -1,57 +1,120 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <!-- Logo -->
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <!-- Placeholder logo -->
-                    <img src="/frontend/assets/img/logo-entero.png" alt="RecycleWare logo" heigh="40">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
 
-                <!-- Menú principal -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page"
-                                href="#catalogo">Catálogo</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#sobre-nosotros">Sobre
-                                nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#faqs">FAQs</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page"
-                                href="#contacto">Contacto</a></li>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="./frontend/dist/css/style.css">
+</head>
+<body>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Buscador -->
-                <div class="nav-search">
-                    <form action="#" method="get">
-                        <input type="search" name="q" placeholder="Busca componentes o equipos..." aria-label="Buscar">
-                        <button type="submit" aria-label="Buscar">
-                            🔍
-                        </button>
-                    </form>
-                </div>
-
-                <!-- Login -->
-                <div class="nav-auth">
-                    <a href="#login" class="btn-login">Log In</a>
+<div class="container py-5">
+    
+    <section class="mb-5">
+        <h2 class="text-center mb-4 display-6 fw-bold">Comunidad RecycleWare</h2>
+        
+        <div class="row g-4">
+            
+            <div class="col-md-4">
+                <div class="card h-100 border-primary shadow-sm bg-white">
+                    <div class="card-body text-center">
+                        <span class="badge bg-primary mb-2">Logro</span>
+                        <h3 class="h5 card-title">¡1.000 equipos entregados!</h3>
+                        <p class="card-text text-muted">Esta semana hemos alcanzado la cifra mágica. Gracias a vuestras donaciones, 1.000 usuarios ya tienen un equipo.</p>
+                        <div class="card-footer bg-transparent border-0">
+                            <small class="text-secondary italic">Publicado hace 2 días</small>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
+
+            <div class="col-md-4">
+                <div class="card h-100 border-warning shadow-sm bg-white">
+                    <div class="card-body text-center d-flex flex-column justify-content-center">
+                        <div class="mb-3 text-warning">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="card-text fs-5"><em>"Gracias a RecycleWare pude conseguir un portátil para terminar mi curso de programación. El equipo funciona de maravilla."</em></p>
+                        <p class="fw-bold mb-0">- Juan R. <span class="text-muted fw-normal">(Beneficiario)</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 border-success shadow-sm bg-white">
+                    <div class="card-body text-center">
+                        <span class="badge bg-success mb-2">Nueva Donación</span>
+                        <h3 class="h5 card-title">TechCorp se une al cambio</h3>
+                        <p class="card-text text-muted">La empresa TechCorp ha donado 25 monitores profesionales.</p>
+                        <a href="#" class="btn btn-outline-success btn-sm mt-3">
+                            Ver disponibilidad <i class="bi bi-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <hr class="my-5 opacity-25">
+
+    <section class="row justify-content-center">
+        <div class="col-lg-10">
+            
+            <article class="mb-5 p-4 bg-white border rounded-4 shadow-sm">
+                <h2 class="h3 mb-3 text-primary"><i class="bi bi-info-circle me-2"></i>¿Qué es RecycleWare?</h2>
+                <p class="lead">Somos una plataforma intermediaria que da larga vida a la tecnología.</p>
+                <p>Actuamos como un puente entre quienes tienen hardware sobrante y quienes lo necesitan para seguir creciendo profesional o personalmente.</p>
+                <div class="p-3 border-start border-4 border-primary bg-light">
+                    <p class="mb-0"><strong>El ciclo es sencillo:</strong> Recibimos los equipos donados en nuestros puntos autorizados, los ponemos a punto y los publicamos en nuestro catálogo para que vuelvan a ser útiles y puedan ser solicitados por quienes los necesiten.</p>
+                </div>
+            </article>
+
+            <article class="mb-5">
+                <h2 class="h3 mb-3"><i class="bi bi-laptop me-2"></i>¿Necesitas equipamiento?</h2>
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <p>Cualquier persona puede visualizar nuestro catálogo disponible, pero para solicitar un producto es necesario <strong>estar registrado</strong>. Esto nos permite garantizar una entrega justa y organizada.</p>
+                        <p>Una vez aprobada tu solicitud, deberás acudir a uno de nuestros puntos autorizados para retirar el equipo solicitado.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <button class="btn btn-primary btn-lg px-4">Registrarse ahora</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="p-4 border rounded-4 bg-white shadow-sm">
+                <h2 class="h3 mb-4 text-success"><i class="bi bi-heart me-2"></i>¿Quieres colaborar?</h2>
+                <p class="mb-4">Tu hardware puede cambiar una vida. Puedes colaborar de distintas formas:</p>
+
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <h3 class="h5 fw-bold"><i class="bi bi-person me-2"></i>Particulares</h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item px-0 border-0 bg-transparent">
+                                <strong>Donación Identificada:</strong> Regístrate tanto para llevar un historial de tus donaciones y de las solicitudes enviadas, como para elegir el punto de entrega o recogida de los equipos.
+                            </li>
+                            <li class="list-group-item px-0 border-0 bg-transparent">
+                                <strong>Donación Puntual:</strong> Colabora sin necesidad de registro entregando tus equipos directamente en nuestros puntos autorizados durante el horario de atención.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="h5 fw-bold"><i class="bi bi-building me-2"></i>Empresas</h3>
+                        <p class="small">
+                            Las empresas pueden registrarse con un perfil corporativo. Al hacerlo, <strong>se reconocerán oficialmente sus méritos</strong> y aportaciones a la economía circular, otorgando visibilidad a su compromiso social en nuestra plataforma.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            
+        </div>
+    </section>
+</div>
+</body>
+</html>
