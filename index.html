@@ -8,62 +8,54 @@
     <link rel="stylesheet" href="./frontend/dist/css/style.css">
 </head>
 
-<body>
-    <div>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-smooth-scroll="true" tabindex="0">
+    <div class="d-flex flex-column min-vh-100">
         <header>
-            <nav class="navbar navbar-expand-lg bg-dark">
+            <nav class="navbar navbar-expand-lg bg-dark fixed-top">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html"><img src="/frontend/assets/img/logo-entero.png"
-                            alt="RecycleWare logo" class="img-fluid w-50"></a>
+                    <a class="navbar-brand" href="index.html"><img src="/frontend/assets/img/logo.png"
+                            alt="RecycleWare logo" class="logo"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <div class="menu-centrado">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                                    <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-light" href="#">Link</a>
+                                    <a class="nav-link" href="#categorias">Productos</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-light" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#info">¿Cómo funciona?</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link disabled text-light" aria-disabled="true">Disabled</a>
+                                    <a class="nav-link" href="#contacto">Contacto</a>
                             </li>
                         </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </div>
+                        <form class="d-flex ms-auto" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar..."
+                                aria-label="Search" />
+                            <button class="btn-buscar" type="submit">Buscar</button>
                         </form>
                     </div>
                 </div>
             </nav>
-
-            <section class="seccion-hero">
+        </header>
+        <section class="seccion-hero" id="inicio">
 
                 <video class="video-fondo" autoplay muted loop playsinline>
-                    <source src="" type="video/webm">
+                <source src="/frontend/assets/img/Video_Sin_Texto_De_Equipos.mp4" type="video/webm">
                 </video>
 
                 <div class="capa-oscura"></div>
 
                 <div class="hero-contenido">
-                    <span class="etiqueta-hero">♻️ Tecnología Sostenible</span>
+                <!-- <span class="etiqueta-hero">♻️ Tecnología Sostenible</span> -->
 
                     <h1 class="titulo-hero">
                         Da una <span class="resaltado">segunda vida</span> <br> a tu tecnología
@@ -79,18 +71,15 @@
                         <a href="#solicitar" class="btn-solicitar">Solicitar Equipo</a>
                     </div>
                 </div>
-
-
-                <!-- realizado -->
             </section>
-        </header>
     </div>
+
     <main>
 
 
 
         <!--HECHO                sección categorías                        HECHO-->
-        <div class="container">
+        <div class="container" id="categorias">
             <div class="row row-cols-sm-2 row-cols-xl-4 row-cols-1 gy-2 p-3">
                 <div class="col">
                     <div class="card text-center h-100 d-inline-flex flex-column shadow">
@@ -208,7 +197,7 @@
             <!--sección información más detallada y a qué público nos dirigimos-->
 
 
-            <section class="row justify-content-center">
+            <section class="row justify-content-center" id="info">
                 <div class="col-lg-10">
 
                     <article class="mb-5 p-4 bg-white border rounded-4 shadow-sm">
@@ -275,7 +264,7 @@
             <hr>
 
             <!--sección formulario contacto-->
-            <div>
+            <div id="contacto">
                 <!--sección formulario -->
                 <h2>¡Contacta con nosotros!</h2>
                 <form action="#" method="post">
@@ -334,6 +323,7 @@
             &copy; 2026 RecycleWare. Todos los derechos reservados.
         </div>
     </footer>
+    <script src="/frontend/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
