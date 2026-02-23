@@ -52,13 +52,12 @@ body {
                 text-decoration: none;
                 transition: all 0.3s ease;
                 background-color: $primary;
-                /* Tu azul marino profundo */
+
                 color: $light;
                 border: 2px solid $primary;
 
                 &:hover {
                     background-color: $secondary;
-                    /* Cambia a verde azulado al pasar el ratón */
                     border-color: $secondary;
                 }
 }
@@ -136,7 +135,6 @@ body {
         z-index: 0;
     }
 
-    /* Filtro oscuro usando tu variable $dark con transparencia */
     .capa-oscura {
         position: absolute;
         top: 0;
