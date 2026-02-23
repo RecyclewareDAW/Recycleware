@@ -218,3 +218,25 @@ body {
         }
     }
 }
+
+/*   SECCIÓN CONTACTO   */
+
+.btn-azul {
+    font-family: $headings-font-family;
+                padding: 0.75rem 2rem;
+                font-size: 1.2rem;
+                font-weight: 500;
+                border-radius: 0.5rem;
+                text-decoration: none;
+                transition: all 0.3s ease;
+                background-color: $primary;
+                /* Tu azul marino profundo */
+                color: $light;
+                border: 2px solid $primary;
+
+                &:hover {
+                    background-color: $secondary;
+                    /* Cambia a verde azulado al pasar el ratón */
+                    border-color: $secondary;
+                }
+}
