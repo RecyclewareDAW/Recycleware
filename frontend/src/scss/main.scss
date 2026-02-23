@@ -1,14 +1,15 @@
-@import "variables";
-@import "../../node_modules/bootstrap/scss/bootstrap";
-@import "../../src/scss/bootstrap-icons";
+@use "variables" as *;
+@use "../../node_modules/bootstrap/scss/bootstrap";
+@use "../../src/scss/bootstrap-icons";
 
-@import "components/navbar";
-@import "components/hero";
-@import "components/footer";
-@import "components/buttons";
-@import "components/cards";
-@import "components/forms";
+@use "components/navbar";
+@use "components/hero";
+@use "components/footer";
+@use "components/buttons";
+@use "components/cards";
+@use "components/forms";
 
 body {
     background-color: $fondo-secundario; 
 }
+
