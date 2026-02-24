@@ -28,6 +28,7 @@ El proyecto está dividido en dos directorios principales para facilitar la esca
     `cd frontend`
 2.  Instala las dependencias (Bootstrap, Sass):
     `npm install`
+    `npm install bootstrap`
 3.  Compila el SASS:
     `npm run sass`
 4.  Abre `index.html` en tu navegador.

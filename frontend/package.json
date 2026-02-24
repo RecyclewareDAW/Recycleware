@@ -7,7 +7,7 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --quiet-deps src/scss/main.scss dist/css/style.css"
+    "sass": "sass --quiet-deps src/scss/main.scss dist/css/main.css"
   },
   "dependencies": {
     "bootstrap": "^5.3.8",
