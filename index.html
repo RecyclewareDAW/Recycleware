@@ -12,41 +12,63 @@
     <div class="d-flex flex-column min-vh-100">
         <!---------------------------- EL HEADER ft/header EMPIEZA AQUÍ ------------------------------------>
         <header>
-            <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+            <nav class="bg-dark fixed-top">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html"><img src="/frontend/assets/img/logo.png"
-                            alt="RecycleWare logo" class="logo"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <div class="menu-centrado">
-                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#categorias">Productos</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#info">¿Cómo funciona?</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#contacto">Contacto</a>
-                                </li>
-                            </ul>
+                    <div class="row align-items-center">
+                        <div class="col-lg-2 text-start">
+                            <a href="index.html"><img src="./frontend/assets/img/logo.png" alt="RecycleWare logo"
+                                    class="logo"></a>
                         </div>
-                        <form class="d-flex ms-auto" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Buscar..."
-                                aria-label="Search" />
-                            <button class="btn btn-primary" type="submit">Buscar</button>
-                        </form>
+
+                        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button> -->
+                        <div class="col-lg-5 text-center">
+                            <div class="menu-centrado">
+                                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active text-light" aria-current="page"
+                                            href="#inicio">Inicio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-light" href="#categorias">Productos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-light" href="#info">¿Cómo funciona?</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-light" href="#contacto">Contacto</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <form class="d-flex align-items-center flex-nowrap ms-auto" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Buscar..."
+                                    aria-label="Search" />
+                                <button class="btn btn-primary" type="submit"> <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="20" height="20" fill="currentColor" class="bi bi-search"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                    </svg></button>
+                            </form>
+                        </div>
+                        <div class="col-lg-2 text-lg-end">
+                            <a href="#" class="link-secondary link-underline link-underline-opacity-0 text-light">Iniciar
+                                Sesión
+                            </a>
+                        </div>
                     </div>
                 </div>
             </nav>
         </header>
+
+
+
         <!--------------------------------- HASTA AQUÍ ft/header HEADER TERMINA AQUÍ ---------------------------------------------->
 
         <!------------------------------- EL HEADER ft/hero EMPIEZA AQUÍ ----------------------------------------->
@@ -318,7 +340,7 @@
                     </div>
                 </form>
             </div>
- <!----------------------------- HASTA AQUÍ ft/formulario-Contacto FORMULARIO DE CONTACTO TERMINA AQUÍ ----------------------------------->
+            <!----------------------------- HASTA AQUÍ ft/formulario-Contacto FORMULARIO DE CONTACTO TERMINA AQUÍ ----------------------------------->
     </main>
 
     <!--------------------------- SECCIÓN ft/footer FOOTER EMPIEZA AQUÍ ----------------------------------------------->

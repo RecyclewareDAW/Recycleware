@@ -62,53 +62,64 @@ $theme-colors: (
     "dark": $dark
 );
 
-.navbar {
-    position: relative;
-
-    .container-fluid {
-        position: relative;
-    }
-
-    .logo {
-        height: 50px;
-        width: auto;
-    }
-
-    @media (min-width: 992px) {
-        .menu-centrado {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 10;
-        }
-    }
-
-    .navbar-nav {
-        .nav-link {
-            color: $light;
-            font-family: $headings-font-family;
-            font-size: 1.2rem;
-
-            &.active {
-                color: $secondary;
-            }
-        }
-    }
-
-    .btn-primary {
-        background-color: transparent;
-        color: $success;
-        border: 2px solid $secondary;
-        border-radius: 1rem;
-
-        &:hover {
-            color: $light;
-            background-color: $secondary;
-            border-color: $secondary;
-        }
-    }
+.logo {
+    height: 45px; // Ajusta este valor a tu gusto
+    width: auto;  // Mantiene la proporción
+    object-fit: contain;
 }
+
+// .navbar {
+//     position: relative;
+
+//     .container-fluid {
+//         position: relative;
+//     }
+
+//     .logo {
+//         height: 50px;
+//         width: auto;
+//     }
+
+//     .navbar-collapse {
+//         display: flex;
+//         justify-content: space-between; // Reparte logo a la izq, menú al centro, buscador a la der
+//         align-items: center;
+//     }
+
+//     .navbar-nav {
+//         margin-left: auto;
+//         margin-right: auto;
+
+//         .nav-link {
+//             color: $light;
+//             font-family: $headings-font-family;
+//             font-size: 1.2rem;
+
+//             &.active {
+//                 color: $secondary;
+//             }
+//         }
+//     }
+
+//     .link-secondary {
+//         font-family: $headings-font-family;
+//         font-size: 1.2rem;
+//     }
+
+//     .btn-primary {
+//         background-color: transparent;
+//         color: $success;
+//         border: none;
+//         border-radius: 2rem;
+
+//         &:hover {
+//             color: $light;
+//             background-color: $secondary;
+//             border-color: $secondary;
+//             border-radius: 2rem;
+//         }
+//     }
+// }
 
 
 /*   SECCIÓN HERO   */
@@ -230,6 +241,4 @@ $theme-colors: (
 
 // Títulos:
 
-.titulo {
-    
-}
+.titulo {}
