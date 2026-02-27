@@ -62,14 +62,53 @@ $theme-colors: (
     "dark": $dark
 );
 
-.logo {
-    height: 45px; // Ajusta este valor a tu gusto
-    width: auto; // Mantiene la proporción
-    object-fit: contain;
-}
-
 .navbar {
-    .nav-link {
+    position: relative;
+
+    .container-fluid {
+        position: relative;
+    }
+
+    .logo {
+        height: 50px;
+        width: auto;
+    }
+
+    // @media (min-width: 992px) {
+    //     .menu-centrado {
+    //         position: absolute;
+    //         left: 50%;
+    //         top: 50%;
+    //         transform: translate(-50%, -50%);
+    //         z-index: 10;
+    //     }
+    // }
+
+    // navegador del header
+    .navbar-nav {
+        .nav-link {
+            color: $light;
+            font-family: $headings-font-family;
+            font-size: 1.2rem;
+
+            &.active {
+                color: $secondary;
+            }
+
+            &:hover {
+                color: $secondary;
+            }
+        }
+    }
+
+    // box buscador
+    // .form-control {
+    //     min-width: 8ch;
+    // }
+
+
+    // Derecha el iniciar sesión
+    .iniciar-sesion {
         color: $light;
         font-family: $headings-font-family;
         font-size: 1.2rem;
@@ -82,24 +121,21 @@ $theme-colors: (
             color: $secondary;
         }
     }
-}
 
+    // botón del buscador
+    .btn-primary {
+        background-color: transparent;
+        color: $success;
+        border: 2px solid $secondary;
+        border-radius: 1rem;
 
-// botón del buscador
-.btn-primary {
-    background-color: transparent;
-    color: $success;
-    border: none;
-    border-radius: 2rem;
-
-    &:hover {
-        color: $light;
-        background-color: $secondary;
-        border-color: $secondary;
-        border-radius: 2rem;
+        &:hover {
+            color: $light;
+            background-color: $secondary;
+            border-color: $secondary;
+        }
     }
 }
-
 
 
 /*   SECCIÓN HERO   */
@@ -107,12 +143,12 @@ $theme-colors: (
 .seccion-hero {
     position: relative;
     overflow: hidden;
-    min-height: 100vh;
+    flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    // min-height: 70vh;
+    min-height: 70vh;
 
     /* Vídeo de fondo */
     .video-fondo {
@@ -222,3 +258,7 @@ $theme-colors: (
 // Títulos:
 
 .titulo {}
+
+// Cards
+
+$box-shadow: 0px 0px 10px 0px $dark;
