@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RecycleWare</title>
     <link rel="stylesheet" href="./frontend/dist/css/main.css">
+    <link rel="stylesheet" href="./frontend/node_modules/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-smooth-scroll="true" tabindex="0">
@@ -293,90 +294,116 @@
             <!------------------- SECCIÓN ft/formulario-Contacto FORMULARIO de contacto EMPIEZA AQUÍ ----------------------------------->
 
             <div id="contacto" class="container my-5 col-lg-8 bg-white py-4 px-4 rounded-3 shadow">
-                <h2 class="mb-5 text-center fw-bold">¡Contacta con nosotros!</h2>
+                <h2 class="mb-5 text-center fw-bold text-primary">¡Contacta con nosotros!</h2>
 
-                <form action="#" method="post">
-                    <div class="row g-5 mb-5">
-                        <div class="col-md-6">
-                            <input type="text"
-                                class="form-control border-0 border-bottom rounded-0 px-0 shadow-none text-primary"
-                                id="nombre" name="nombre" placeholder="Nombre" required
-                                style="border-color: #5c2c90 !important; background-color: transparent;">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="email"
-                                class="form-control border-0 border-bottom rounded-0 px-0 shadow-none text-primary"
-                                id="email" name="email" placeholder="Email" required
-                                style="border-color: #5c2c90 !important; background-color: transparent;">
-                        </div>
+           <form id="miFormulario" action="#" method="post" class="needs-validation" novalidate>
+                <div class="row g-4 mb-4">
+                    <div class="col-md-6">
+                        <label for="nombre" class="form-label d-none">Nombre</label>
+                        <input type="text" class="form-control border-0 border-bottom rounded-0 px-0 shadow-none text-primary" 
+                            id="nombre" name="nombre" placeholder="Nombre" required 
+                            style="border-color: rgb(93, 44, 144) !important; background-color: transparent;">
+                        <div class="invalid-feedback">Por favor, escribe tu nombre.</div>
                     </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label d-none">Email</label>
+                        <input type="email" class="form-control border-0 border-bottom rounded-0 px-0 shadow-none text-primary" 
+                            id="email" name="email" placeholder="Email" required 
+                            style="border-color: rgb(92, 44, 144) !important; background-color: transparent;">
+                        <div class="invalid-feedback">Introduce un correo válido.</div>
+                    </div>
+                </div>
 
-                    <div class="mb-4">
-                        <textarea class="form-control border-0 border-bottom rounded-0 px-0 shadow-none text-primary"
-                            id="asunto" name="asunto" rows="2" placeholder="Asunto" required
-                            style="resize: none; border-color: #5c2c90 !important; background-color: transparent;"></textarea>
-                    </div>
+                <div class="mb-4">
+                    <label for="asunto" class="form-label d-none">Asunto</label>
+                    <textarea class="form-control border-0 border-bottom rounded-0 px-0 shadow-none text-primary" 
+                            id="asunto" name="asunto" rows="2" placeholder="Asunto" required 
+                            style="resize: none; border-color: rgb(92, 44, 144) !important; background-color: transparent;"></textarea>
+                    <div class="invalid-feedback">El asunto es obligatorio.</div>
+                </div>
 
-                    <div class="form-check mb-5">
-                        <input class="form-check-input" type="checkbox" id="terminos" name="terminos" required
-                            style="border-color: #5c2c90;">
-                        <label class="form-check-label text-muted" for="terminos">
-                            Acepto los términos y condiciones
-                        </label>
-                    </div>
+                <div class="form-check mb-5">
+                    <input class="form-check-input" type="checkbox" id="terminos" name="terminos" required 
+                        style="border-color: rgb(92, 44, 144);">
+                    <label class="form-check-label text-muted" for="terminos">
+                        Acepto los <a href="#" class="text-decoration-none">términos y condiciones</a>
+                    </label>
+                    <div class="invalid-feedback">Debes aceptar antes de enviar.</div>
+                </div>
 
-                    <div>
-                        <button type="submit" class="btn btn-primary">
-                            Enviar
-                        </button>
-                    </div>
-                </form>
+                <div>
+                    <button type="submit" class="btn btn-primary px-4 py-2">
+                        Enviar Mensaje
+                    </button>
+                </div>
+            </form>
+            <div id="mensajeExito" class="alert alert-success text-center mt-4" style="display: none;">
+                <h4 class="alert-heading"><i class="bi bi-check-circle-fill me-2"></i>¡Mensaje enviado!</h4>
+                <p class="mb-0">Gracias por contactar con nosotros. Hemos recibido tus datos correctamente y nos pondremos en contacto contigo pronto.</p>
+            </div>
             </div>
  <!----------------------------- HASTA AQUÍ ft/formulario-Contacto FORMULARIO DE CONTACTO TERMINA AQUÍ ----------------------------------->
     </main>
 
     <!--------------------------- SECCIÓN ft/footer FOOTER EMPIEZA AQUÍ ----------------------------------------------->
-    <footer class="text-center text-lg-start text-white bg-dark">
+    <footer class="text-center text-white" style="background-color: #212529;">
         <div class="container p-4 pb-0">
-            <section>
-                <div class="row">
-                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 fw-bold">Colaboradores</h6>
-                        <p>Empresa Partner A</p>
-                        <p>Asociación B</p>
-                        <p>Organización C</p>
-                    </div>
+            
+            <section class="mb-4 d-flex flex-wrap justify-content-center gap-3 gap-md-5 small text-white-50">
+                <span><strong>Colaboradores:</strong> Empresa A | Asociación B | Org C</span>
+                <span><strong>Contacto:</strong> contacto@miweb.com | +34 600 000 000 | Madrid</span>
+            </section>
 
-                    <hr class="w-100 clearfix d-md-none" />
+            <section class="mb-4">
+                <a class="btn btn-outline-light rounded-circle m-1" href="#!" role="button" 
+                style="width: 42px; height: 42px; display: inline-flex; align-items: center; justify-content: center;">
+                    <i class="bi bi-instagram"></i>
+                </a>
 
-                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 fw-bold">Contacto</h6>
-                        <p>📧 contacto@miweb.com</p>
-                        <p>📞 +34 600 000 000</p>
-                        <p>📍 Calle Ejemplo, 123, Madrid</p>
-                    </div>
+                <a class="btn btn-outline-light rounded-circle m-1" href="#!" role="button" 
+                style="width: 42px; height: 42px; display: inline-flex; align-items: center; justify-content: center;">
+                    <i class="bi bi-facebook"></i>
+                </a>
 
-                    <hr class="w-100 clearfix d-md-none" />
+                <a class="btn btn-outline-light rounded-circle m-1" href="#!" role="button" 
+                style="width: 42px; height: 42px; display: inline-flex; align-items: center; justify-content: center;">
+                    <i class="bi bi-twitter-x"></i>
+                </a>
 
-                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 fw-bold">Síguenos</h6>
-                        <p><a href="#" class="text-white text-decoration-none">📷 Instagram</a></p>
-                        <p><a href="#" class="text-white text-decoration-none">📘 Facebook</a></p>
-                        <p><a href="#" class="text-white text-decoration-none">🐦 Twitter / X</a></p>
-                        <p><a href="#" class="text-white text-decoration-none">💼 LinkedIn</a></p>
-                    </div>
-                </div>
+                <a class="btn btn-outline-light rounded-circle m-1" href="#!" role="button" 
+                style="width: 42px; height: 42px; display: inline-flex; align-items: center; justify-content: center;">
+                    <i class="bi bi-linkedin"></i>
+                </a>
             </section>
         </div>
 
-        <div class="text-center p-3 mt-4 bg-dark">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             &copy; 2026 RecycleWare. Todos los derechos reservados.
         </div>
     </footer>
 
     <!------------------------- HASTA AQUÍ ft/footer FOOTER TERMINA AQUÍ ----------------------------------------------->
 
+    <!------------------------- SCRIPTS ----------------------------------------------->
+
     <script src="/frontend/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="frontend/src/javascript/form.js"></script>
+    <script>
+        (() => {
+        'use strict'
+        const forms = document.querySelectorAll('.needs-validation')
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+            }, false)
+        })
+        })()
+    </script>
 </body>
 
 </html>
