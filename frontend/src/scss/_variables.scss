@@ -74,15 +74,11 @@ $theme-colors: (
         width: auto;
     }
 
-    // @media (min-width: 992px) {
-    //     .menu-centrado {
-    //         position: absolute;
-    //         left: 50%;
-    //         top: 50%;
-    //         transform: translate(-50%, -50%);
-    //         z-index: 10;
-    //     }
-    // }
+    //para el color de la hamburguesa en tamaño pequeño
+    .navbar-toggler {
+        color: $secondary;
+        border-color: $secondary;
+    }
 
     // navegador del header
     .navbar-nav {
@@ -101,7 +97,7 @@ $theme-colors: (
         }
     }
 
-    // box buscador
+    // box buscador controlar tamaño mínimo
     // .form-control {
     //     min-width: 8ch;
     // }
@@ -178,7 +174,7 @@ $theme-colors: (
         z-index: 2;
         color: $light;
         padding: 4rem 1.5rem;
-        /* NUEVO: 4rem de padding arriba y abajo para despegarlo de los bordes */
+        /* 4rem de padding arriba y abajo para despegarlo de los bordes */
         width: 100%;
 
         .etiqueta-hero {
@@ -196,20 +192,17 @@ $theme-colors: (
 
         .titulo-hero {
             font-family: $headings-font-family;
-            /* Tu fuente Alexandria */
             font-size: clamp(2.5rem, 5vw, 4rem);
             font-weight: $headings-font-weight;
             margin-bottom: 1rem;
 
             .resaltado {
                 color: $success;
-                /* Tu verde menta para que resalte la palabra */
             }
         }
 
         .descripcion-hero {
             font-family: $font-family-base;
-            /* Mi fuente Roboto */
             font-size: 1.25rem;
             color: $light;
             margin: 0 auto 2rem auto;
@@ -228,7 +221,7 @@ $theme-colors: (
                 // Esto asegura que ambos tengan el mismo ancho mínimo
                 min-width: 200px;
 
-                // Opcional: En pantallas muy pequeñas, que ocupen todo el ancho
+                // En pantallas muy pequeñas, que ocupen todo el ancho
                 @media (max-width: 576px) {
                     width: 100%;
                     max-width: 300px; // Para que no sean gigantes en móviles grandes
@@ -253,11 +246,6 @@ $theme-colors: (
         }
     }
 }
-
-
-// Títulos:
-
-.titulo {}
 
 // Cards
 
