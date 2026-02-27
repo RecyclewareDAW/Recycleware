@@ -70,8 +70,10 @@ $theme-colors: (
     }
 
     .logo {
-        height: 50px;
+        // clamp(MÍNIMO, TAMAÑO DINÁMICO, MÁXIMO)
+        height: clamp(32px, 6vw, 50px);
         width: auto;
+        object-fit: contain; // Mantiene la proporción sin deformarse
     }
 
     //para el color de la hamburguesa en tamaño pequeño
