@@ -1,4 +1,56 @@
-<!doctype html>
+<header class="bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark py-3 container">
+                <div class="container-fluid px-0">
+                    <div class="row align-items-center justify-content-between w-100 g-0">
+
+                        <div class="col-6 col-lg-3">
+                            <a class="navbar-brand m-0" href="index.html">
+                                <img src="./frontend/assets/img/logo.png" alt="Logo" style="height: 40px;">
+                            </a>
+                        </div>
+
+                        <div class="col-6 d-flex d-lg-none justify-content-end">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse col-lg-9" id="navbarNav">
+                            <ul class="navbar-nav mx-auto mb-3 mb-lg-0 text-center">
+                                <li class="nav-item"><a class="nav-link active text-light" href="#inicio">Inicio</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link text-light" href="#categorias">Productos</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link text-light text-nowrap" href="#info">¿Cómo funciona?</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link text-light" href="#contacto">Contacto</a></li>
+                            </ul>
+
+                            <div class="d-flex flex-column flex-lg-row align-items-center gap-3 justify-content-end">
+                                <form class="d-flex w-100 w-lg-auto" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Buscar...">
+                                    <button class="btn btn-primary" type="submit">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                            <path
+                                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                        </svg>
+                                    </button>
+                                </form>
+                                <a href="#" class="text-light text-nowrap text-decoration-none ms-lg-2">Iniciar
+                                    Sesión</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+
+        <!doctype html>
 <html lang="es">
 
 <head>
@@ -9,113 +61,102 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-smooth-scroll="true" tabindex="0">
-    <div class="d-flex flex-column min-vh-100">
+    <div class="d-flex flex-column vh-100">
         <!---------------------------- EL HEADER ft/header EMPIEZA AQUÍ ------------------------------------>
-        <header>
-            <nav class="navbar navbar-expand-lg bg-dark fixed-top">
-                <div class="container-fluid">
-                    <a class="navbar-brand d-flex align-items-center" href="index.html">
-                        <img src="/frontend/assets/img/logo.png" alt="RecycleWare logo" class="logo">
+
+        <header class="bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark container py-3">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="./frontend/assets/img/logo.png" alt="Logo" height="40">
+            </a>
+
+            <!-- Botón hamburguesa -->
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Contenido colapsable -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categorias">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-nowrap" href="#info">¿Cómo funciona?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex flex-column flex-lg-row align-items-center gap-3">
+
+                    <form class="d-flex w-100 w-lg-auto" role="search">
+                        <input class="form-control me-2"
+                               type="search"
+                               placeholder="Buscar...">
+                        <button class="btn btn-primary" type="submit">
+                            Buscar
+                        </button>
+                    </form>
+
+                    <a href="#" class="text-light text-nowrap text-decoration-none">
+                        Iniciar Sesión
                     </a>
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
-                            class="bi bi-list" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-                        </svg>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#categorias">Productos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-nowrap" href="#info">¿Cómo funciona?</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contacto">Contacto</a>
-                            </li>
-                        </ul>
-
-                        <div class="d-flex flex-column flex-lg-row align-items-lg-center">
-                            <form class="d-flex mb-3 mb-lg-0 me-lg-3" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Buscar..."
-                                    aria-label="Search" />
-                                <button class="btn btn-primary d-flex align-items-center justify-content-center"
-                                    type="submit">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-search" viewBox="0 0 16 16">
-                                        <path
-                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                                    </svg>
-                                </button>
-                            </form>
-
-                            <a href="#" class="iniciar-sesion text-nowrap text-decoration-none pb-2 pb-lg-0">Iniciar
-                                Sesión</a>
-                        </div>
-                    </div>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
+
+
+
         <!--------------------------------- HASTA AQUÍ ft/header HEADER TERMINA AQUÍ ---------------------------------------------->
 
         <!------------------------------- EL HEADER ft/hero EMPIEZA AQUÍ ----------------------------------------->
+        <section class="seccion-hero" id="inicio">
 
-        <section class="seccion-hero pt-4 pt-md-0" id="inicio">
+        <video class="video-fondo" autoplay muted loop playsinline>
+            <source src="/frontend/assets/img/Video_Sin_Texto_De_Equipos.mp4" type="video/webm">
+        </video>
 
-            <video class="video-fondo" autoplay muted loop playsinline>
-                <source src="/frontend/assets/img/Video_Sin_Texto_De_Equipos.mp4" type="video/webm">
-            </video>
+        <div class="capa-oscura"></div>
 
-            <div class="capa-oscura"></div>
+        <div class="hero-contenido">
 
-            <div class="hero-contenido">
-                <!-- <span class="etiqueta-hero">♻️ Tecnología Sostenible</span> -->
+            <h1 class="titulo-hero">
+                Da una <span class="resaltado">segunda vida</span><br>
+                a tu tecnología
+            </h1>
 
-                <h1 class="titulo-hero">
-                    Da una <span class="resaltado">segunda vida</span> <br> a tu tecnología
-                </h1>
+            <p class="descripcion-hero">
+                No es basura, es una oportunidad. Gestionamos, reparamos y donamos
+                material informático para reducir la brecha digital y cuidar el planeta.
+            </p>
 
-                <p class="descripcion-hero">
-                    No es basura, es una oportunidad. Gestionamos, reparamos y donamos
-                    material informático para reducir la brecha digital y cuidar el planeta.
-                </p>
-
-                <div class="hero-acciones">
-                    <a href="#donar" class="btn btn-primary">Donar Equipo</a>
-                    <a href="#solicitar" class="btn btn-primary btn-hero-outline">Solicitar Equipo</a>
-                </div>
+            <div class="hero-acciones">
+                <a href="#donar" class="btn btn-primary">Donar Equipo</a>
+                <a href="#solicitar" class="btn btn-primary btn-hero-outline">
+                    Solicitar Equipo
+                </a>
             </div>
-        </section>
+
+        </div>
+    </section>
     </div>
     <!--------------------------------- HASTA AQUÍ ft/hero HERO TERMINA AQUÍ ---------------------------------------------------------->
 
     <main>
 
-        <!--HECHO                sección categorías                        HECHO-->
-        <div class="container py-5" id="categorias">
-            <h2 class="d-flex justify-content-center text-primary fw-bold pb-4"> Productos y Categorías</h2>
-            <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-4 gy-2 p-3"> -->
-            <div class="row g-4">
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="card h-100 shadow">
-                        <img class="card-img-top" src="https://picsum.photos/id/231/600/600" alt="Portátiles">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bold text-secondary">Portatiles</h5>
-                            <p class="card-text text-primary">With supporting text below as a natural lead-in to
-                                additional
-                                content.</p>
-                            <a href="#" class="mt-auto btn btn-outline-success">Ver
-                                catálogo</a>
         <!-------------------------SECCIÓN ft/categorias CATEGORIAS EMPIEZA AQUÍ ---------------------------------------------->
 
         <h2 class="m-3 d-flex justify-content-center"> Productos y Categorías</h2>
@@ -133,47 +174,42 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="card h-100 shadow">
-                        <img class="card-img-top" src="https://picsum.photos/id/236/600/600" alt="Portátiles">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bold text-secondary">Sobremesa</h5>
-                            <p class="card-text text-primary">With supporting text below as a natural lead-in to
-                                additional
-                                content. Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                                Lorem Ipsum</p>
-                            <a href="#" class="mt-auto btn btn-outline-success">Ver
-                                catálogo</a>
+                <div class="col ">
+                    <div class="card text-center h-100 d-inline-flex flex-column shadow">
+                        <img class="card-img-top h-50 flex-fill" src="https://placehold.co/500x600/webp">
+                        <div class="card-body flex-fill d-flex flex-column h-50 ">
+                            <h3 class="card-title">Sobremesa</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content. Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                                    Lorem Ipsum</p>
+                                <a href="#" class=" p-3 link-secondary text-decoration-none mt-auto">Ver
+                                    catálogo</a>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="card h-100 shadow">
-                        <img class="card-img-top" src="https://picsum.photos/id/235/600/600" alt="Portátiles">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bold text-secondary">Componentes</h5>
-                            <p class="card-text text-primary">With supporting text below as a natural lead-in to
-                                additional
-                                content. Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                                Lorem Ipsum</p>
-                            <a href="#" class="mt-auto btn btn-outline-success">Ver
-                                catálogo</a>
+                <div class="col ">
+                    <div class="card text-center h-100 d-inline-flex flex-column shadow">
+                        <img class="card-img-top h-50 flex-fill" src="https://placehold.co/500x600/webp">
+                        <div class="card-body flex-fill d-flex flex-column h-50 ">
+                            <h3 class="card-title">Componentes</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content. Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                                    Lorem Ipsum</p>
+                                <a href="#" class=" p-3 link-secondary text-decoration-none mt-auto">Ver
+                                    catálogo</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="card h-100 shadow">
-                        <img class="card-img-top" src="https://picsum.photos/id/234/600/600" alt="Portátiles">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bold text-secondary">Perifericos</h5>
-                            <p class="card-text text-primary">With supporting text below as a natural lead-in to
-                                additional
-                                content. Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-                                Lorem Ipsum</p>
-                            <a href="#" class="mt-auto btn btn-outline-success">Ver
-                                catálogo</a>
+                <div class="col ">
+                    <div class="card text-center h-100 d-inline-flex flex-column shadow">
+                        <img class="card-img-top h-50 flex-fill" src="https://placehold.co/600x600/webp">
+                        <div class="card-body flex-fill d-flex flex-column h-50 ">
+                            <h3 class="card-title">Perifericos</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional
+                                    content. Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                                    Lorem Ipsum</p>
+                                <a href="#" class=" p-3 link-secondary text-decoration-none mt-auto">Ver
+                                    catálogo</a>
                         </div>
                     </div>
                 </div>
@@ -194,7 +230,7 @@
                 <div class="row g-4">
 
                     <div class="col-md-4">
-                        <div class="card h-100 border-primary bg-white">
+                        <div class="card h-100 border-primary shadow-sm bg-white">
                             <div class="card-body text-center">
                                 <span class="badge bg-primary mb-2">Logro</span>
                                 <h3 class="h5 card-title">¡1.000 equipos entregados!</h3>
@@ -242,7 +278,7 @@
                 </div>
             </section>
 
-            <!------------------------- HASTA AQUÍ ft/comunidad COMUNIDAD TERMINA AQUÍ ------------------------------------------------->
+            <!-------------------------SECCIÓN ft/comunidad COMUNIDAD TERMINA AQUÍ ------------------------------------------------->
 
             <hr class="my-5 opacity-25">
 
@@ -328,16 +364,8 @@
                                 class="form-control border-0 border-bottom rounded-0 px-0 shadow-none text-primary"
                                 id="nombre" name="nombre" placeholder="Nombre" required
                                 style="border-color: #5c2c90 !important; background-color: transparent;">
-                            <input type="text"
-                                class="form-control border-0 border-bottom rounded-0 px-0 shadow-none text-primary"
-                                id="nombre" name="nombre" placeholder="Nombre" required
-                                style="border-color: #5c2c90 !important; background-color: transparent;">
                         </div>
                         <div class="col-md-6">
-                            <input type="email"
-                                class="form-control border-0 border-bottom rounded-0 px-0 shadow-none text-primary"
-                                id="email" name="email" placeholder="Email" required
-                                style="border-color: #5c2c90 !important; background-color: transparent;">
                             <input type="email"
                                 class="form-control border-0 border-bottom rounded-0 px-0 shadow-none text-primary"
                                 id="email" name="email" placeholder="Email" required
@@ -349,14 +377,9 @@
                         <textarea class="form-control border-0 border-bottom rounded-0 px-0 shadow-none text-primary"
                             id="asunto" name="asunto" rows="2" placeholder="Asunto" required
                             style="resize: none; border-color: #5c2c90 !important; background-color: transparent;"></textarea>
-                        <textarea class="form-control border-0 border-bottom rounded-0 px-0 shadow-none text-primary"
-                            id="asunto" name="asunto" rows="2" placeholder="Asunto" required
-                            style="resize: none; border-color: #5c2c90 !important; background-color: transparent;"></textarea>
                     </div>
 
                     <div class="form-check mb-5">
-                        <input class="form-check-input" type="checkbox" id="terminos" name="terminos" required
-                            style="border-color: #5c2c90;">
                         <input class="form-check-input" type="checkbox" id="terminos" name="terminos" required
                             style="border-color: #5c2c90;">
                         <label class="form-check-label text-muted" for="terminos">
@@ -368,10 +391,10 @@
                         <button type="submit" class="btn btn-primary">
                             Enviar
                         </button>
-                                </div>
-                            </form>
-                        </div>
- <!----------------------------- HASTA AQUÍ ft/formulario-Contacto FORMULARIO DE CONTACTO TERMINA AQUÍ ----------------------------------->
+                    </div>
+                </form>
+            </div>
+            <!----------------------------- HASTA AQUÍ ft/formulario-Contacto FORMULARIO DE CONTACTO TERMINA AQUÍ ----------------------------------->
     </main>
 
     <!--------------------------- SECCIÓN ft/footer FOOTER EMPIEZA AQUÍ ----------------------------------------------->
@@ -385,17 +408,7 @@
                         <p>Asociación B</p>
                         <p>Organización C</p>
                     </div>
-        <div class="container p-4 pb-0">
-            <section>
-                <div class="row">
-                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 fw-bold">Colaboradores</h6>
-                        <p>Empresa Partner A</p>
-                        <p>Asociación B</p>
-                        <p>Organización C</p>
-                    </div>
 
-                    <hr class="w-100 clearfix d-md-none" />
                     <hr class="w-100 clearfix d-md-none" />
 
                     <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
@@ -404,26 +417,9 @@
                         <p>📞 +34 600 000 000</p>
                         <p>📍 Calle Ejemplo, 123, Madrid</p>
                     </div>
-                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 fw-bold">Contacto</h6>
-                        <p>📧 contacto@miweb.com</p>
-                        <p>📞 +34 600 000 000</p>
-                        <p>📍 Calle Ejemplo, 123, Madrid</p>
-                    </div>
 
                     <hr class="w-100 clearfix d-md-none" />
-                    <hr class="w-100 clearfix d-md-none" />
 
-                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 fw-bold">Síguenos</h6>
-                        <p><a href="#" class="text-white text-decoration-none">📷 Instagram</a></p>
-                        <p><a href="#" class="text-white text-decoration-none">📘 Facebook</a></p>
-                        <p><a href="#" class="text-white text-decoration-none">🐦 Twitter / X</a></p>
-                        <p><a href="#" class="text-white text-decoration-none">💼 LinkedIn</a></p>
-                    </div>
-                </div>
-            </section>
-        </div>
                     <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
                         <h6 class="text-uppercase mb-4 fw-bold">Síguenos</h6>
                         <p><a href="#" class="text-white text-decoration-none">📷 Instagram</a></p>
@@ -442,11 +438,6 @@
 
     <!------------------------- HASTA AQUÍ ft/footer FOOTER TERMINA AQUÍ ----------------------------------------------->
 
-    <script src="/frontend/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <div class="text-center p-3 mt-4 bg-dark">
-            &copy; 2026 RecycleWare. Todos los derechos reservados.
-        </div>
-    </footer>
     <script src="/frontend/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
