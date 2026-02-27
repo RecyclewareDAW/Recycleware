@@ -37,7 +37,10 @@ $font-alexandria: 'Alexandria';
 $font-family-base: $font-roboto;
 
 $headings-font-family: $font-alexandria;
-$headings-font-weight: 500;
+
+//Grosores:
+
+$weight-titulo: 600;
 
 // Tamaños de fuentes:
 $font-size-base: 1.1rem;
@@ -179,23 +182,22 @@ $theme-colors: (
         /* 4rem de padding arriba y abajo para despegarlo de los bordes */
         width: 100%;
 
-        .etiqueta-hero {
-            display: inline-block;
-            background-color: $secondary;
-            /* Tu verde azulado */
-            color: $light;
-            padding: 0.5rem 1rem;
-            border-radius: 50rem;
-            margin-bottom: 1.5rem;
-            font-family: $font-alexandria;
-            font-size: 1rem;
-            font-weight: 500;
-        }
+        // .etiqueta-hero {
+        //     display: inline-block;
+        //     background-color: $secondary;
+        //     /* Tu verde azulado */
+        //     color: $light;
+        //     padding: 0.5rem 1rem;
+        //     border-radius: 50rem;
+        //     margin-bottom: 1.5rem;
+        //     font-family: $font-alexandria;
+        //     font-size: 1rem;
+        //     font-weight: $headings-font-weight;
+        // }
 
         .titulo-hero {
             font-family: $headings-font-family;
             font-size: clamp(2.5rem, 5vw, 4rem);
-            font-weight: $headings-font-weight;
             margin-bottom: 1rem;
 
             .resaltado {
@@ -247,6 +249,18 @@ $theme-colors: (
             }
         }
     }
+}
+
+
+// Títulos:
+
+.titulo {
+    color: $primary;
+    font-weight: $weight-titulo;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+
 }
 
 // Cards

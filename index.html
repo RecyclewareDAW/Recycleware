@@ -10,6 +10,7 @@
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-smooth-scroll="true" tabindex="0">
     <div class="d-flex flex-column min-vh-100">
+        <!---------------------------- EL HEADER ft/header EMPIEZA AQUÍ ------------------------------------>
         <header>
             <nav class="navbar navbar-expand-lg bg-dark fixed-top">
                 <div class="container-fluid">
@@ -20,11 +21,7 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
-                            class="bi bi-list" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-                        </svg>
+                        <i class="bi bi-list"></i>
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -50,11 +47,7 @@
                                     aria-label="Search" />
                                 <button class="btn btn-primary d-flex align-items-center justify-content-center"
                                     type="submit">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-search" viewBox="0 0 16 16">
-                                        <path
-                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                                    </svg>
+                                    <i class="bi bi-search"></i>
                                 </button>
                             </form>
 
@@ -93,12 +86,13 @@
             </div>
         </section>
     </div>
+    <!--------------------------------- HASTA AQUÍ ft/hero HERO TERMINA AQUÍ ---------------------------------------------------------->
 
     <main>
 
         <!--HECHO                sección categorías                        HECHO-->
         <div class="container py-5" id="categorias">
-            <h2 class="d-flex justify-content-center text-primary fw-bold pb-4"> Productos y Categorías</h2>
+            <h2 class="titulo"> Productos y Categorías</h2>
             <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-4 gy-2 p-3"> -->
             <div class="row g-4">
                 <div class="col-12 col-md-6 col-lg-3">
@@ -162,13 +156,15 @@
         </div>
         <!--sección noticias últimas donaciones/opiniones/reseñas-->
         <hr>
+
+        <!-------------------------SECCIÓN ft/comunidad COMUNIDAD EMPIEZA AQUÍ ------------------------------------------------->
+
         <div class="container py-5">
 
             <section class="mb-5">
-                <h2 class="text-center mb-4 display-6 fw-bold">Comunidad RecycleWare</h2>
+                <h2 class="titulo">Comunidad RecycleWare</h2>
 
                 <div class="row g-4">
-
                     <div class="col-md-4">
                         <div class="card h-100 border-primary bg-white">
                             <div class="card-body text-center">
@@ -177,15 +173,15 @@
                                 <p class="card-text text-muted">Esta semana hemos alcanzado la cifra mágica. Gracias a
                                     vuestras donaciones, 1.000 usuarios ya tienen un equipo.</p>
                                 <div class="card-footer bg-transparent border-0">
-                                    <small class="text-secondary italic">Publicado hace 2 días</small>
+                                    <small class="text-secondary">Publicado hace 2 días</small>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-4">
-                        <div class="card h-100 border-warning shadow-sm bg-white">
-                            <div class="card-body text-center d-flex flex-column justify-content-center">
+                        <div class="card h-100 border-warning bg-white">
+                            <div class="card-body text-center">
                                 <div class="mb-3 text-warning">
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
@@ -202,14 +198,14 @@
                     </div>
 
                     <div class="col-md-4">
-                        <div class="card h-100 border-success shadow-sm bg-white">
+                        <div class="card h-100 border-success bg-white">
                             <div class="card-body text-center">
                                 <span class="badge bg-success mb-2">Nueva Donación</span>
                                 <h3 class="h5 card-title">TechCorp se une al cambio</h3>
                                 <p class="card-text text-muted">La empresa TechCorp ha donado 25 monitores
                                     profesionales.</p>
                                 <a href="#" class="btn btn-outline-success btn-sm mt-3">
-                                    Ver disponibilidad <i class="bi bi-arrow-right ms-1"></i>
+                                    Ver disponibilidad <i class="bi bi-arrow-right"></i>
                                 </a>
                             </div>
                         </div>
@@ -218,9 +214,11 @@
                 </div>
             </section>
 
-            <hr class="my-5 opacity-25">
-            <!--sección información más detallada y a qué público nos dirigimos-->
+            <!------------------------- HASTA AQUÍ ft/comunidad COMUNIDAD TERMINA AQUÍ ------------------------------------------------->
 
+            <hr class="my-5 opacity-25">
+
+            <!-------------------------SECCIÓN ft/informacion INFORMACIÓN EMPIEZA AQUÍ ----------------------------------------------->
 
             <section class="row justify-content-center" id="info">
                 <div class="col-lg-10">
@@ -286,9 +284,12 @@
 
                 </div>
             </section>
+            <!------------------------- HASTA AQUÍ ft/información INFORMACIÓN TERMINA AQUÍ ----------------------------------------------->
+
             <hr>
 
-            <!--sección formulario contacto-->
+            <!------------------- SECCIÓN ft/formulario-Contacto FORMULARIO de contacto EMPIEZA AQUÍ ----------------------------------->
+
             <div id="contacto" class="container my-5 col-lg-8 bg-white py-4 px-4 rounded-3 shadow">
                 <h2 class="mb-5 text-center fw-bold">¡Contacta con nosotros!</h2>
 
@@ -330,7 +331,8 @@
                 </form>
             </div>
     </main>
-    <!--sección footer-->
+
+    <!--------------------------- SECCIÓN ft/footer FOOTER EMPIEZA AQUÍ ----------------------------------------------->
     <footer class="text-center text-lg-start text-white bg-dark">
         <div class="container p-4 pb-0">
             <section>
