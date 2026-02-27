@@ -264,7 +264,7 @@ $theme-colors: (
 
 .form-check-label {
     a.text-link {
-        color: $secondary; // color inicial similar a text-secondary
+        color: $secondary;
         text-decoration: none;
 
         &:hover {
@@ -284,13 +284,6 @@ $theme-colors: (
     padding-bottom: 1rem;
 
 }
-
-//footer
-
-#footer {
-    background-color: $dark;
-}
-
 
 // Cards
 
