@@ -9,6 +9,13 @@
 @import "components/cards";
 @import "components/forms";
 
+/* Reset CSS básico */
+* {
+    margin: 0;       /* Quita márgenes por defecto */
+    padding: 0;      /* Quita padding por defecto */
+    box-sizing: border-box; /* Hace que el width incluya padding y border */
+}
+
 body {
     background-color: $fondo-secundario;
     position: relative; // Obligatorio para ScrollSpy
