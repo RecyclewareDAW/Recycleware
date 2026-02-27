@@ -64,62 +64,42 @@ $theme-colors: (
 
 .logo {
     height: 45px; // Ajusta este valor a tu gusto
-    width: auto;  // Mantiene la proporción
+    width: auto; // Mantiene la proporción
     object-fit: contain;
 }
 
-// .navbar {
-//     position: relative;
+.navbar {
+    .nav-link {
+        color: $light;
+        font-family: $headings-font-family;
+        font-size: 1.2rem;
 
-//     .container-fluid {
-//         position: relative;
-//     }
+        &.active {
+            color: $secondary;
+        }
 
-//     .logo {
-//         height: 50px;
-//         width: auto;
-//     }
+        &:hover {
+            color: $secondary;
+        }
+    }
+}
 
-//     .navbar-collapse {
-//         display: flex;
-//         justify-content: space-between; // Reparte logo a la izq, menú al centro, buscador a la der
-//         align-items: center;
-//     }
 
-//     .navbar-nav {
-//         margin-left: auto;
-//         margin-right: auto;
+// botón del buscador
+.btn-primary {
+    background-color: transparent;
+    color: $success;
+    border: none;
+    border-radius: 2rem;
 
-//         .nav-link {
-//             color: $light;
-//             font-family: $headings-font-family;
-//             font-size: 1.2rem;
+    &:hover {
+        color: $light;
+        background-color: $secondary;
+        border-color: $secondary;
+        border-radius: 2rem;
+    }
+}
 
-//             &.active {
-//                 color: $secondary;
-//             }
-//         }
-//     }
-
-//     .link-secondary {
-//         font-family: $headings-font-family;
-//         font-size: 1.2rem;
-//     }
-
-//     .btn-primary {
-//         background-color: transparent;
-//         color: $success;
-//         border: none;
-//         border-radius: 2rem;
-
-//         &:hover {
-//             color: $light;
-//             background-color: $secondary;
-//             border-color: $secondary;
-//             border-radius: 2rem;
-//         }
-//     }
-// }
 
 
 /*   SECCIÓN HERO   */
@@ -127,12 +107,12 @@ $theme-colors: (
 .seccion-hero {
     position: relative;
     overflow: hidden;
-    flex-grow: 1;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    min-height: 70vh;
+    // min-height: 70vh;
 
     /* Vídeo de fondo */
     .video-fondo {
