@@ -16,7 +16,7 @@
             <nav class="navbar navbar-expand-lg bg-dark fixed-top">
                 <div class="container-fluid">
                     <a class="navbar-brand d-flex align-items-center" href="index.html">
-                        <img src="/frontend/assets/img/logo.png" alt="RecycleWare logo" class="logo">
+                        <img src="./frontend/assets/img/logo.png" alt="RecycleWare logo" class="logo">
                     </a>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -63,7 +63,7 @@
         <section class="seccion-hero pt-4 pt-md-0" id="inicio">
 
             <video class="video-fondo" autoplay muted loop playsinline>
-                <source src="/frontend/assets/img/Video_Sin_Texto_De_Equipos.mp4" type="video/webm">
+                <source src="./frontend/assets/img/Video_Sin_Texto_De_Equipos.mp4" type="video/webm">
             </video>
 
             <div class="capa-oscura"></div>
@@ -209,9 +209,11 @@
 
                 </div>
             </section>
+        </div>
 
-            <hr class="my-5 opacity-25">
+        <hr class="my-5 opacity-25">
 
+        <div class="container py-5">
             <section class="row justify-content-center" id="info">
                 <div class="col">
 
@@ -276,24 +278,20 @@
 
                 </div>
             </section>
+        </div>
 
-            <hr>
+        <hr>
 
-            <div id="contacto" class="container my-5 col bg-white py-4 px-4 rounded-3 border shadow-sm">
+        <div class="container py-5">
+            <div id="contacto" class="bg-white py-4 px-4 rounded-4 border shadow-sm">
                 <h2 class="mb-5 titulo">¡Contacta con nosotros!</h2>
 
                 <form id="miFormulario" action="#" method="post" class="needs-validation" novalidate>
                     <div class="row g-4 mb-4">
                         <div class="col-md-6">
                             <label for="nombre" class="form-label d-none">Nombre</label>
-                            <input 
-                                type="text"
-                                class="form-control rounded-0 px-0 shadow-none text-primary"
-                                id="nombre"
-                                name="nombre"
-                                placeholder="Nombre"
-                                required
-                            >
+                            <input type="text" class="form-control rounded-0 px-0 shadow-none text-primary" id="nombre"
+                                name="nombre" placeholder="Nombre" required>
                             <div class="invalid-feedback">
                                 Por favor, escribe tu nombre.
                             </div>
@@ -301,14 +299,8 @@
 
                         <div class="col-md-6">
                             <label for="email" class="form-label d-none">Email</label>
-                            <input 
-                                type="email"
-                                class="form-control rounded-0 px-0 shadow-none text-primary"
-                                id="email"
-                                name="email"
-                                placeholder="Email"
-                                required
-                            >
+                            <input type="email" class="form-control rounded-0 px-0 shadow-none text-primary" id="email"
+                                name="email" placeholder="Email" required>
                             <div class="invalid-feedback">
                                 Introduce un correo válido.
                             </div>
@@ -317,29 +309,17 @@
 
                     <div class="mb-4">
                         <label for="asunto" class="form-label d-none">Asunto</label>
-                        <textarea 
-                            class="form-control rounded-0 px-0 shadow-none text-primary"
-                            id="asunto"
-                            name="asunto"
-                            rows="2"
-                            placeholder="Asunto"
-                            required
-                        ></textarea>
+                        <textarea class="form-control rounded-0 px-0 shadow-none text-primary" id="asunto" name="asunto"
+                            rows="2" placeholder="Asunto" required></textarea>
                         <div class="invalid-feedback">
                             El asunto es obligatorio.
                         </div>
                     </div>
 
                     <div class="form-check mb-5">
-                        <input 
-                            class="form-check-input"
-                            type="checkbox"
-                            id="terminos"
-                            name="terminos"
-                            required
-                        >
+                        <input class="form-check-input" type="checkbox" id="terminos" name="terminos" required>
                         <label class="form-check-label text-muted" for="terminos">
-                            Acepto los 
+                            Acepto los
                             <a href="#" class="text-link">términos y condiciones</a>
                         </label>
                         <div class="invalid-feedback">
@@ -359,15 +339,17 @@
                         <i class="bi bi-check-circle-fill me-2"></i>¡Mensaje enviado!
                     </h4>
                     <p class="mb-0">
-                        Gracias por contactar con nosotros. Hemos recibido tus datos correctamente y nos pondremos en contacto contigo pronto.
+                        Gracias por contactar con nosotros. Hemos recibido tus datos correctamente y nos pondremos en
+                        contacto contigo pronto.
                     </p>
                 </div>
             </div>
+        </div>
     </main>
 
     <footer class="text-center text-light bg-dark">
         <div class="container p-4 pb-0">
-            
+
             <section class="mb-4 d-flex flex-wrap justify-content-center gap-3 gap-md-5 small ">
                 <span><strong>Colaboradores:</strong> Empresa A | Asociación B | Org C</span>
                 <span><strong>Contacto:</strong> contacto@miweb.com | +34 600 000 000 | Madrid</span>
@@ -401,18 +383,18 @@
     <script src="frontend/src/javascript/form.js"></script>
     <script>
         (() => {
-        'use strict'
-        const forms = document.querySelectorAll('.needs-validation')
-        Array.from(forms).forEach(form => {
-            form.addEventListener('submit', event => {
-            if (!form.checkValidity()) {
-                event.preventDefault()
-                event.stopPropagation()
-            }
+            'use strict'
+            const forms = document.querySelectorAll('.needs-validation')
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
 
-            form.classList.add('was-validated')
-            }, false)
-        })
+                    form.classList.add('was-validated')
+                }, false)
+            })
         })()
     </script>
 </body>
